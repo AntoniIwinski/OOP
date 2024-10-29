@@ -94,6 +94,55 @@ public class BankAccount
         Console.WriteLine("O ile chcesz zwiekszyc saldo?");
         double amount = int.Parse(Console.ReadLine());
         this.Balance = this.Balance + amount;
-        Console.WriteLine($"Balans konta")
+        Console.WriteLine($"Balans konta {this.OwnerName} wynosi: {this.Balance}");
+    }
+
+    public void WithDraw()
+    {
+        Console.WriteLine("Podaj kwote jaka chcesz wyplacic");
+        double amount = int.Parse(Console.ReadLine());
+        if(this.Balance > amount)
+        {
+            this.Balance -= amount;
+            Console.WriteLine($"Pieniadze wyplacono. Aktualny stan konta: {this.Balance}");
+        }
+        else
+        {
+            Console.WriteLine($"Niewystarczajace srodki na koncie. Aktualny balans: {this.Balance}");
+        }
+    }
+
+    public void DisplayBalance()
+    {
+        Console.WriteLine($"Twoje akutalne saldo konta wynosi: {this.Balance}");
+    }
+}
+
+public class Food(string TypeName,int EnergyGiven)
+{
+    public string TypeName {  get; set; } = TypeName;
+    public int EnergyGiven {  get; set; } = EnergyGiven;
+
+    public void ChangeIntoEnergy()
+    {
+        Random random = new Random();
+        this.EnergyGiven = random.Next(6, 10);
+    }
+}
+
+public class Dog(string Name, int EnergyLvl)
+{
+    public string Name { get; set; } = Name;
+    public int EnergyLvl { get; set; } = EnergyLvl;
+
+    public void Eat(object obj)
+    {
+        Console.WriteLine($"Poziom energii pieska przed zjedzeniem {this.EnergyLvl}");
+        if(obj.GetType() == typeof(Food))
+        {
+            Food food = (Food)obj;
+            this.EnergyLvl += food.EnergyGiven;
+        }
+        Console.WriteLine($"Poziom energii pieska: {this.EnergyLvl}");
     }
 }

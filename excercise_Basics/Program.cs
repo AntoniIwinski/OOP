@@ -22,3 +22,33 @@ public class Car
         Console.WriteLine($"Production date: {ProductionDate}");
     }
 }
+
+public class Student
+{
+    public string Name { get; private set; }
+
+    private int _grade;
+    public int Grade
+    {
+        get { return _grade; }
+        set { if (value >= 1 && value <= 6) { _grade = value; } }
+    }
+
+    public Student(string name, int grade)
+    {
+        Name = name;
+        Grade = grade;
+    }
+
+    public bool IsPassing()
+    {
+        if(Grade >= 2)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}

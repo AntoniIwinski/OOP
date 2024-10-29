@@ -77,3 +77,23 @@ public class Book
         Console.WriteLine($"Title by {Author}, pages: {Pages}");
     }
 }
+
+public class BankAccount
+{
+    public string OwnerName { get; private set; }
+    private double Balance;
+    
+    public BankAccount(string ownerName, double balance)
+    {
+        OwnerName = ownerName;
+        Balance = balance;
+    }
+
+    public void Deposit()
+    {
+        Console.WriteLine("O ile chcesz zwiekszyc saldo?");
+        double amount = int.Parse(Console.ReadLine());
+        this.Balance = this.Balance + amount;
+        Console.WriteLine($"Balans konta")
+    }
+}

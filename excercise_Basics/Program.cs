@@ -52,3 +52,28 @@ public class Student
         }
     }
 }
+
+public class Book
+{
+    public string Title { get; private set; }
+    public string Author { get; private set; }
+    public int Pages { get; private set; }
+
+    public Book(string title, string author, int pages) 
+    {
+        Title = title;
+        Author = author;
+        Pages = pages;
+    }
+
+    public void add()
+    {
+        this.Title = "Cursed book";
+        this.Author = "anonim";
+        this.Pages = 2137;
+    }
+    public void GetSummary()
+    {
+        Console.WriteLine($"Title by {Author}, pages: {Pages}");
+    }
+}

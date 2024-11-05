@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic", "Basic\Basic.csproj", "{55B86ACE-1B19-4556-BB5B-17C5545BD139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excercise_Basics", "excercise_Basics\excercise_Basics.csproj", "{9B4465B1-CDC9-413D-B33E-F5FD2F719326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "excercise_Basics", "excercise_Basics\excercise_Basics.csproj", "{9B4465B1-CDC9-413D-B33E-F5FD2F719326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inheritance", "inheritance\inheritance.csproj", "{7EB002DC-F726-486A-A416-720BABCDE8A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9B4465B1-CDC9-413D-B33E-F5FD2F719326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B4465B1-CDC9-413D-B33E-F5FD2F719326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B4465B1-CDC9-413D-B33E-F5FD2F719326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB002DC-F726-486A-A416-720BABCDE8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB002DC-F726-486A-A416-720BABCDE8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB002DC-F726-486A-A416-720BABCDE8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB002DC-F726-486A-A416-720BABCDE8A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
